@@ -1,0 +1,41 @@
+.info-product-title {
+  margin-bottom: 10px;
+}
+.info-product-selle {
+  margin-bottom: 10px;
+}
+.info-product-shipper {
+  margin-bottom: 10px;
+}
+button {
+  margin-bottom: 20px;
+}
+.product-img-top:hover {
+  transform: scale(1.01);
+}
+.product-img:hover {
+  transform: scale(1.01);
+}
+.pub-img:hover {
+  transform: scale(1.01);
+}
+section {
+  font-family: "Chivo", sans-serif;
+  font-size: 1.2rem;
+}
+.info-product {
+  padding: 2%;
+}
+@media (max-width: 720px) {
+  .product-img {
+    width: 100%;
+    margin: 0%;
+    margin-top: 5%;
+  }
+  .info-product {
+    /* text-align: center; */
+    /* padding: 0%; */
+    /* margin: 0%; */
+    margin-left: 10%;
+  }
+}

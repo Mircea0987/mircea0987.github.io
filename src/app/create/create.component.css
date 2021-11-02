@@ -1,0 +1,65 @@
+body {
+    margin: 0%;
+    /* transition: ease-in 2s; */
+  }
+  .form-check {
+    height: 12%;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .auth {
+    transition: all 1s;
+  }
+  
+  .auth {
+    padding: 1%;
+    background-color: #fff;
+  }
+  input {
+    width: 100%;
+    border-radius: 20px;
+    height: 55%;
+    margin-top: 10px;
+  }
+  input {
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  .logo:hover {
+    animation: pulse 1s infinite;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: all 1s;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+  @media (max-width: 720px) {
+    .left-photo {
+      width: 100%;
+    }
+    .auth {
+      flex-direction: column;
+    }
+    .right-photo {
+      width: 13%;
+    }
+    .mail-input,
+    .text-input,
+    .password-input,
+    form {
+      padding: 2%;
+    }
+    .auth{
+      transition: 1s all;
+    }
+  }

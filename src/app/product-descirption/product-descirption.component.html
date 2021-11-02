@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="d-flex justify-content-center">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <div class="">
+                        <img class="promo-img"
+                            src="https://lcdn.altex.ro/media/ibanner/H/o/Homepage_Banner_Campanie_saptamanala_2x.png"
+                            alt="promo-img 1">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="">
+                        <img class="promo-img" src="https://lcdn.altex.ro/media/ibanner/E/x/Extra_Homepage_2x.png"
+                            alt="promo-img 2">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+
+        </div>
+    </section>
+
+    <article class="d-flex justify-content-evenly flex-wrap ">
+        <div>
+            <h4>{{product.category}}</h4>
+            <div>
+                <div class="card" style="width: 20rem;">
+                    <img class="product-img"
+                        src="https://i.pinimg.com/736x/4d/1d/71/4d1d7134802fbda569d75c91ec647d4f--home-computer-desks-minimalist-desk.jpg"
+                        alt="product-img">
+
+                    <div class="card-body">
+                        <div>
+                            <h4 class="card-title">{{product.title}}</h4>
+                            <p class="card-text">{{product.description}} </p>
+                            <h4 class="card-text"> {{product.price | currency:"RON"}}
+                            </h4>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a routerLink="produse" class="btn btn-outline-dark">See product!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <app-footer></app-footer>
+</body>
+
+</html>

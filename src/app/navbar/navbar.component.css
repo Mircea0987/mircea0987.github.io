@@ -1,0 +1,11 @@
+@media(max-width:720px) {
+    .fixed-top{
+        position: unset;
+    }
+    
+}
+@media(max-width:720px){
+    .navbar-brand{
+        display: none;
+    }
+}

@@ -1,0 +1,59 @@
+/* body {
+  background-color: #f7f7f7;
+} */
+.navbar-brand {
+  margin-top: 3%;
+}
+form {
+  padding: 4%;
+  background-color: #fff;
+}
+.navbar-brand {
+  margin-top: 5%;
+}
+.header {
+  font-weight: 100;
+}
+.btn {
+  border-radius: 20px;
+  filter: grayscale(100);
+}
+.btn-space {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.btn:hover {
+  color: aqua;
+  filter: grayscale(0);
+  transform: scale(1.1);
+  transition: all 1s;
+}
+.btn-apple {
+  color: white;
+}
+.create {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.create:hover {
+  color: #00d4d4;
+}
+.username {
+  height: 12%;
+  width: 100%;
+  border-radius: 20px;
+}
+input {
+  text-align: center;
+}
+.btn-next {
+  height: 10%;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+input.ng-invalid {
+  border-left: 5px solid red;
+}
+input.ng-valid {
+  border-left: 5px solid green;
+}
