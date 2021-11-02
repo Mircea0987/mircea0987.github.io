@@ -7,6 +7,7 @@ export interface Product {
   rate: number;
   isInStock: boolean;
   description: string;
+  descriptionDescription:string,
   dimensions: string;
   material: string;
 }

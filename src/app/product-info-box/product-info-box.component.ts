@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from '../product.model';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-product-info-box',
@@ -8,8 +7,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./product-info-box.component.css'],
 })
 export class ProductInfoBoxComponent implements OnInit {
-  @Input()
-  product: Observable<Product[]>;
+  @Input() product: Product;
   constructor() {}
 
   ngOnInit(): void {}

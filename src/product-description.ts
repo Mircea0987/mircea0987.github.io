@@ -1,6 +1,6 @@
 export interface productDescription {
   title: string;
   price: number;
-  gen:string;
+  category:string;
   description:string
 }

@@ -41,11 +41,14 @@
             </div>
             <hr>
 
-            <form class="form-check" action="create.inc.php" method="post">
-                <input class="text-input" type="text" placeholder=" Name"> <br>
-                <input class="mail-input" type="mail" placeholder="Mail"> <br>
-                <input class="password-input" type="password" placeholder="Password"> <br>
-                <button class="btn btn-outline-dark">Register!</button>
+            <form class="form-check" action="create.inc.php" method="post" [formGroup]="registerForm">
+                <input class="text-input" type="text" placeholder=" Name" formControlName="Name"> <br>
+                <span *ngIf="Name && Name.invalid">Name Required</span>
+                <input class="mail-input" type="email" placeholder="Mail" formControlName="mail"> <br>
+                <span *ngIf="mail && mail.invalid">Mail Required</span>
+                <input class="password-input" type="password" placeholder="Password" formControlName="password">
+                <span *ngIf="password && password.invalid">Password Required</span>
+                <button class="btn btn-outline-dark" type="submit">Register!</button>
 
             </form>
         </div>

@@ -5,10 +5,11 @@ import { CreateComponent } from './create/create.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductDescirptionComponent } from './product-descirption/product-descirption.component';
 import { ProductModalComponent } from './product-modal/product-modal.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-  { component: ProductDescirptionComponent, path: '' },
-  // { component: ProductModalComponent, path: 'produse' },
+  { component: ProductsComponent, path: '' },
+  { component: ProductModalComponent, path: 'produse' },
   { component: ContComponent, path: 'cont' },
   { component: CreateComponent, path: 'create' },
 ];

@@ -10,6 +10,7 @@ import { Y } from './y';
 })
 export class AppComponent {
   title = 'input';
+ @Input() product: Product;
   // productDescription: productDescription[] = [
   //   {
   //     title: 'string',

@@ -1,5 +1,5 @@
-<ul>
-    <li *ngFor="let product of products">
-        <app-product-descirption [product]='product'></app-product-descirption>
-    </li>
-</ul>
+<li style="list-style: none;" *ngFor="let product of products">
+    <app-product-descirption [product]="product"></app-product-descirption>
+    <app-product-info-box [product]='product'></app-product-info-box>
+    <app-product-modal [product]='product'></app-product-modal>
+</li>
