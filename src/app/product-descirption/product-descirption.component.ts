@@ -10,15 +10,7 @@ import { Y } from '../y';
 export class ProductDescirptionComponent implements OnInit {
   @Input()
   product: Product;
-  // da: productDescription[] = [
-  //   {
-  //     title: 'string',
-  //     price: 2,
-  //     category: 'string',
-  //     description: 'string',
-  //   },
-    
-  // ];
+
 
   constructor() {}
 

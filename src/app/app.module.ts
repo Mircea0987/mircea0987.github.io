@@ -15,6 +15,8 @@ import { ContComponent } from './cont/cont.component';
 import { CreateComponent } from './create/create.component';
 import { CartComponent } from './cart/cart.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { CarousellComponent } from './carousell/carousell.component';
+import { ProductModalForComponent } from './product-modal-for/product-modal-for.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     CreateComponent,
     CartComponent,
     FavoriteComponent,
+    CarousellComponent,
+    ProductModalForComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],
