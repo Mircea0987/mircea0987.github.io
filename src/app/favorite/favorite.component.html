@@ -1,1 +1,42 @@
-<p>favorite works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <article>
+        <div  class='text-center justify-content-center' style="margin-top: 5%;">
+            <img src="https://s13emagst.akamaized.net/layout/ro/static-upload/empty_state_favorite.png"
+                alt="favorite-img">
+            <h4>Hmm, niciun produs in lista ta.</h4>
+            <p>Adauga acum la Favorite si fa-ti liste dupa preferinte.
+
+                Le poti share-ui oricand cu prietenii si poti salva la Favorite produsele din cos ca sa le cumperi mai
+                tarziu.
+            </p>
+            <a href="http://localhost:4200/" class="btn btn-info">Vezi Produse</a>
+        </div>
+        <section>
+            <div class="card d-flex justify-content-center text-center w-50"
+                style="margin-left: auto; margin-right: auto; margin-top: 5%;">
+                <div class="card-body">
+                    <div  #element>
+                        <!-- {{item.title}} {{item.price | currency:"RON"}} -->
+                        <p class="float-end" (click)="element.remove()">Sterge</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>

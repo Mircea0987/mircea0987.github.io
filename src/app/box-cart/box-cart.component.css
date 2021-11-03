@@ -1,0 +1,48 @@
+.card-title {
+  margin: 0%;
+}
+.card-text {
+  margin-top: 10px;
+  padding: 0.355em;
+}
+.btn {
+  width: 50%;
+}
+.float-end {
+  margin-top: 1%;
+  margin-right: 10%;
+  width: 15%;
+}
+.pay {
+  width: 25%;
+  border-left: 5px solid #ececec;
+}
+.card {
+  width: 50%;
+}
+.img {
+  width: 100%;
+}
+.img:hover {
+  transform: scale(1.01);
+}
+@media (max-width: 720px) {
+  .pay {
+    width: 100%;
+    float: unset;
+    text-align: center;
+    margin-top: 10%;
+    transform: translate(0%, 3%);
+  }
+  .float-end {
+    width: 100%;
+    float: unset;
+    margin: 0%;
+    padding: 0%;
+  }
+  .card {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+}

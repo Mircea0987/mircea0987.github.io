@@ -17,6 +17,7 @@ import { CartComponent } from './cart/cart.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { CarousellComponent } from './carousell/carousell.component';
 import { ProductModalForComponent } from './product-modal-for/product-modal-for.component';
+import { BoxCartComponent } from './box-cart/box-cart.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ProductModalForComponent } from './product-modal-for/product-modal-for.
     FavoriteComponent,
     CarousellComponent,
     ProductModalForComponent,
+    BoxCartComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],
