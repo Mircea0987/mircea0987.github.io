@@ -12,7 +12,7 @@ body {
 }
 
 .auth {
-  padding: 1%;
+  padding: 3%;
   background-color: #fff;
 }
 input {
@@ -30,10 +30,13 @@ input {
   border-radius: 20px;
 }
 input.ng-invalid {
-  border-left: 5px solid red;
+  background: white
+    url("https://img.icons8.com/fluency/35/000000/high-importance.png") left
+    no-repeat;
 }
 input.ng-valid {
-  border-left: 5px solid green;
+  background: white url(https://img.icons8.com/color/30/000000/ok.png) left
+    no-repeat;
 }
 .logo:hover {
   animation: pulse 1s infinite;

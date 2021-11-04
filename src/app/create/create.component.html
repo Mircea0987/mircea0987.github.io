@@ -42,12 +42,13 @@
             <hr>
 
             <form class="form-check" action="create.inc.php" method="post" [formGroup]="registerForm">
-                <input class="text-input" type="text" placeholder=" Name" formControlName="Name"> <br>
-                <span *ngIf="Name && Name.invalid">Name Required</span>
-                <input class="mail-input" type="email" placeholder="Mail" formControlName="mail"> <br>
-                <span *ngIf="mail && mail.invalid">Mail Required</span>
+                <input class="text-input" type="text" placeholder=" Name" formControlName="Name" pattern="^([ \u00c0-\u01ffa-zA-Z'\-.])+$"> <br>
+                <!-- <span *ngIf="Name && Name.invalid">Name Required</span> -->
+                <input class="mail-input" type="email" placeholder="Mail" formControlName="mail"
+                    pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"> <br>
+                <!-- <span *ngIf="mail && mail.invalid">Mail Required</span> -->
                 <input class="password-input" type="password" placeholder="Password" formControlName="password">
-                <span *ngIf="password && password.invalid">Password Required</span>
+                <!-- <span *ngIf="password && password.invalid">Password Required</span> -->
                 <button class="btn btn-outline-dark" type="submit">Register!</button>
 
             </form>

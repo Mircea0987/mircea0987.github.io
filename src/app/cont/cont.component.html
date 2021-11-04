@@ -21,13 +21,13 @@
         <div class="d-flex justify-content-center flex-wrap">
             <form class="shadow-lg" [formGroup]="LoginForm" action="cont.inc.php" method="post">
                 <h4 class="text-center">Salut!</h4>
-                <h5 class="text-center">Introdu adresa de email</h5>
-                <input type="email" name="email" class=" username" formControlName="email" placeholder="Enter Mail">
-                <span *ngIf="email && email.invalid" class="d-flex justify-content-center">Mail Required</span>
+                <h5 class="text-center email-required">Introdu adresa de email</h5>
+                <input type="email" name="email" class=" username" formControlName="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" placeholder="Enter Mail">
+                <!-- <span *ngIf="email && email.invalid" data-tool-tip="Mail Required" class="d-flex justify-content-center">*</span> -->
                 <input type="password" name="password" class="w-100 username" formControlName="password"
                     placeholder="Password" style="margin-top: 20px;"> <br>
-                <span *ngIf="password && password.invalid" class="d-flex justify-content-center">Password
-                    Required</span>
+                <!-- <span *ngIf="password && password.invalid" class="d-flex justify-content-center">Password
+                    Required</span> -->
                 <button type="submit" class="btn btn-dark w-100">Continua</button>
                 <div class="text-center">
                     Nu ai cont? Nu-ti face griji

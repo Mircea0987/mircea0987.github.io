@@ -16,6 +16,7 @@ form {
 }
 .btn {
   border-radius: 20px;
+  margin-top: 20px;
   filter: grayscale(100);
 }
 .btn-space {
@@ -52,8 +53,29 @@ input {
   border-radius: 20px;
 }
 input.ng-invalid {
-  border-left: 5px solid red;
+  background: white
+    url("https://img.icons8.com/fluency/35/000000/high-importance.png") left
+    no-repeat;
 }
 input.ng-valid {
-  border-left: 5px solid green;
+  background: white url(https://img.icons8.com/color/30/000000/ok.png) left no-repeat;
 }
+/* span[data-tool-tip] {
+  position: relative;
+}
+span[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  color: #000;
+  background: red;
+  display: block;
+  position: absolute;
+  padding: 0.2rem;
+  bottom: -10%;
+  left: 0%;
+  border-radius: 20px;
+  transform: scale(0);
+  transition: ease-out 055ms;
+}
+span[data-tool-tip]:hover::after {
+  transform: scale(1);
+} */

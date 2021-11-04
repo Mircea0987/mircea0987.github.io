@@ -1,6 +1,48 @@
-<li style="list-style: none;" *ngFor="let product of products">
-    <app-product-descirption [product]="product"></app-product-descirption>
-    
-    <!-- <app-product-info-box [product]='product'></app-product-info-box> -->
-    <!-- <app-product-modal [product]='product'></app-product-modal> -->
-</li>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <div style=" display: flex;" *ngFor='let product of products'>
+        <app-product-descirption></app-product-descirption>
+        <app-product-info-box [product]='product'></app-product-info-box>
+        <app-product-modal [product]='product'></app-product-modal>
+    </div> -->
+    <section>
+        <div class="d-flex justify-content-center">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <div class="">
+                        <img class="promo-img"
+                            src="https://lcdn.altex.ro/media/ibanner/H/o/Homepage_Banner_Campanie_saptamanala_2x.png"
+                            alt="promo-img 1">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="">
+                        <img class="promo-img" src="https://lcdn.altex.ro/media/ibanner/E/x/Extra_Homepage_2x.png"
+                            alt="promo-img 2">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+
+        </div>
+    </section>
+    <div class="d-flex justify-content-evenly" *ngFor='let product of products'>
+
+        <app-product-descirption [product]="product"></app-product-descirption>
+        <app-product-descirption [product]="product"></app-product-descirption>
+
+    </div>
+</body>
+
+</html>

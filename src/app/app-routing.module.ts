@@ -13,15 +13,14 @@ import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-  // { component: CarousellComponent, path: '' },
   // { component: ProductsComponent, path: '' },
   // { path: '', redirectTo: '', pathMatch: 'full' },
+  { component: ProductsComponent, path: '' },
   { component: FavoriteComponent, path: 'favorite' },
   { component: CartComponent, path: 'cart' },
   { component: ProductModalForComponent, path: 'product' },
   { component: ContComponent, path: 'cont' },
   { component: CreateComponent, path: 'create' },
-  { component: ProductsComponent, path: '' },
 ];
 
 @NgModule({

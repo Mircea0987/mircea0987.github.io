@@ -1,0 +1,9 @@
+@media (max-width: 720px) {
+  .product-img {
+    width: 100%;
+    margin: 0%;
+  }
+}
+.promo-img {
+  width: 100%;
+}

@@ -37,7 +37,7 @@ export class ProductModalForComponent implements OnInit {
       Pe langa Ceramic Shield, mai exista un factor care contribuie la rezistenta suprafetei frontale. Alinierea perfecta a suprafetei frontale cu marginea telefonului, ceea ce il protejeaza si mai mult. In total, am cvadruplat rezistenta la cadere - cea mai mare imbunatatire de la an la an, adusa vreodata unei noi generatii de iPhone.`,
       dimensions: '	71.5 x 146.7 x 7.4 mm',
       material: 'Cel mai bun silicon',
-      // url:'https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751'
+      url:'https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751'
     },
     
   ];

@@ -18,6 +18,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { CarousellComponent } from './carousell/carousell.component';
 import { ProductModalForComponent } from './product-modal-for/product-modal-for.component';
 import { BoxCartComponent } from './box-cart/box-cart.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { CategoryComponent } from './categories/category/category.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { BoxCartComponent } from './box-cart/box-cart.component';
     CarousellComponent,
     ProductModalForComponent,
     BoxCartComponent,
+    CategoriesComponent,
+    CategoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],
