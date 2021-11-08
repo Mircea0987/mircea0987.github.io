@@ -19,10 +19,10 @@
         <h5>{{product.isInStock ? 'In stock' : 'Nu e in stock'}} <img
                 src="https://img.icons8.com/emoji/30/000000/green-circle-emoji.png" alt="in stock?" /></h5>
         <h5>Pretul in RON: {{product.price | currency:"RON"}}</h5>
-        <button class="btn btn-outline-info info-product-price" style="width: 100%;"><img
+        <button (click)="Pay()" class="btn btn-outline-info info-product-price" style="width: 100%;"><img
                 src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/35/000000/external-cart-grocery-flatart-icons-flat-flatarticons.png" /></button>
         <br>
-        <button class="btn btn-outline-info info-product-cart" style="width: 100%;"><img
+        <button (click)="Fav()" class="btn btn-outline-info info-product-cart" style="width: 100%;"><img
                 src="https://img.icons8.com/emoji/30/000000/star-emoji.png" /></button>
     </div>
 

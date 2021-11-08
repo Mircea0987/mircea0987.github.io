@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../product.model';
 
 @Component({
@@ -8,7 +8,17 @@ import { Product } from '../product.model';
 })
 export class ProductInfoBoxComponent implements OnInit {
   @Input() product: Product;
+  @Output() PayEvent = new EventEmitter();
+  @Output() FavEvent = new EventEmitter();
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  Pay() {
+    this.PayEvent.emit();
+  }
+  Fav() {
+    this.FavEvent.emit();
+  }
 }

@@ -13,7 +13,7 @@
 <body>
 
     <article>
-        <div  class='text-center justify-content-center' style="margin-top: 5%;">
+        <div *ngIf="items.length == 0" class='text-center justify-content-center' style="margin-top: 5%;">
             <img src="https://s13emagst.akamaized.net/layout/ro/static-upload/empty_state_favorite.png"
                 alt="favorite-img">
             <h4>Hmm, niciun produs in lista ta.</h4>
@@ -25,12 +25,12 @@
             <a href="http://localhost:4200/" class="btn btn-info">Vezi Produse</a>
         </div>
         <section>
-            <div class="card d-flex justify-content-center text-center w-50"
+            <div *ngIf="items.length" class="card d-flex justify-content-center text-center w-50"
                 style="margin-left: auto; margin-right: auto; margin-top: 5%;">
                 <div class="card-body">
-                    <div  #element>
-                        <!-- {{item.title}} {{item.price | currency:"RON"}} -->
-                        <p class="float-end" (click)="element.remove()">Sterge</p>
+                    <div *ngFor="let item of items">
+                        {{item.title}} {{item.price | currency:"RON"}}
+                        <p class="float-end">Sterge</p>
                         <hr>
                     </div>
                 </div>

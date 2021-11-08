@@ -13,22 +13,23 @@
 
 <body>
 
-    <app-box-cart></app-box-cart>
+    <app-box-cart *ngIf="items.length"></app-box-cart>
     <section>
 
 
-        <div class="card" style=" margin-left: 10%; margin-top: 5%; padding-bottom: 5em; width: 50%;">
+        <div *ngIf="items.length" class="card"
+            style=" margin-left: 10%; margin-top: 5%; padding-bottom: 5em; width: 50%;">
             <div class="card-body">
-                <div>
-                    <!-- {{ item.title }} {{ item.price | currency: "RON"}} -->
-                    <!-- <p class="float-end" (click)="element.remove()">Sterge</p> -->
+                <div *ngFor="let item of items">
+                    {{ item.title }} {{ item.price | currency: "RON"}}
+                    <p class="float-end">Sterge</p>
                     <hr>
                 </div>
             </div>
         </div>
     </section>
     <article>
-        <div class='text-center justify-content-center' style="margin-top: 5%;">
+        <div *ngIf="items.length == 0" class='text-center justify-content-center' style="margin-top: 5%;">
             <h4>Cosul tau este gol!</h4>
             <p>Daca ai un cont te rugam sa intri in cont si te vom directiona catre produsele din cos</p>
             <a style="width: 10%;" href="" class="btn btn-info">Intoarce-te in magazin!</a>

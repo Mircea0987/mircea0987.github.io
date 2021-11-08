@@ -7,7 +7,7 @@ import { Product } from '../product.model';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
-  products: Product[] = [
+   products: Product[] = [
     {
       title: 'IphoneX',
       category: 'Phone',
@@ -21,7 +21,8 @@ export class ProductsComponent implements OnInit {
       dimensions: '180 X 60 (mm)',
       material: 'Cel mai bun silicon',
       url: 'https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751',
-    },    {
+    },
+    {
       title: 'IphoneXXx',
       category: 'Phone',
       company: 'Apple',

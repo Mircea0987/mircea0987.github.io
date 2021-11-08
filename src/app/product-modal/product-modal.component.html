@@ -22,7 +22,7 @@
 
 <body>
 
-    <app-product-info-box [product]="product"></app-product-info-box>
+    <app-product-info-box [product]="product" (PayEvent)='Pay(product)' (FavEvent)="Fav(product)" ></app-product-info-box>
 
     <div>
         <div class="img-cont">

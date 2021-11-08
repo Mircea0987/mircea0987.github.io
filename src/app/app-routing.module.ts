@@ -25,7 +25,6 @@ const routes: Routes = [
   { component: CreateComponent, path: 'create' },
   { component: CategoriesComponent, outlet: 'categories', path: '' },
   { component: CategoryComponent, path: 'categorii' },
-  // { component: CategoryComponent, path: '' },
 ];
 
 @NgModule({
