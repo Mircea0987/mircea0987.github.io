@@ -17,12 +17,11 @@
     <section>
 
 
-        <div *ngIf="items.length" class="card"
-            style=" margin-left: 10%; margin-top: 5%; padding-bottom: 5em; width: 50%;">
+        <div *ngIf="items.length" class="card" style=" margin-left: 10%; margin-top: 5%;  width: 50%;">
             <div class="card-body">
-                <div *ngFor="let item of items">
+                <div *ngFor="let item of items" #element>
                     {{ item.title }} {{ item.price | currency: "RON"}}
-                    <p class="float-end">Sterge</p>
+                    <p class="float-end" (click)="element.remove()">Sterge</p>
                     <hr>
                 </div>
             </div>
@@ -32,7 +31,7 @@
         <div *ngIf="items.length == 0" class='text-center justify-content-center' style="margin-top: 5%;">
             <h4>Cosul tau este gol!</h4>
             <p>Daca ai un cont te rugam sa intri in cont si te vom directiona catre produsele din cos</p>
-            <a style="width: 10%;" href="" class="btn btn-info">Intoarce-te in magazin!</a>
+            <a href="" class="btn btn-info">Intoarce-te in magazin</a>
             <p>sau te poti <a class="link-info" href="">intoarce in magazin</a> pentru a continua cumparaturile.</p>
         </div>
     </article>

@@ -51,6 +51,7 @@ export class CategoriesComponent implements OnInit {
       url: 'string',
     },
   ];
+  search:string
   constructor() {}
 
   ngOnInit(): void {}

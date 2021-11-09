@@ -18,29 +18,27 @@
                 src="https://img.icons8.com/external-justicon-flat-justicon/60/000000/external-deviantart-social-media-justicon-flat-justicon.png"
                 alt="brand">
         </div>
+  
         <div class="d-flex justify-content-center flex-wrap">
-            <form class="shadow-lg" [formGroup]="LoginForm" action="cont.inc.php" method="post">
+        
+            <form class="shadow-lg" [formGroup]="LoginForm" method="POST" action="cont-inc.php">
+         
                 <h4 class="text-center">Salut!</h4>
                 <h5 class="text-center email-required">Introdu adresa de email</h5>
-                <input type="email" name="email" class=" username" formControlName="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" placeholder="Enter Mail">
-                <!-- <span *ngIf="email && email.invalid" data-tool-tip="Mail Required" class="d-flex justify-content-center">*</span> -->
+                <input type="email" name="email" class=" username" formControlName="email"
+                    pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" placeholder="Enter Mail">
                 <input type="password" name="password" class="w-100 username" formControlName="password"
                     placeholder="Password" style="margin-top: 20px;"> <br>
-                <!-- <span *ngIf="password && password.invalid" class="d-flex justify-content-center">Password
-                    Required</span> -->
-                <button type="submit" class="btn btn-dark w-100">Continua</button>
+
+                <button type="submit" name="submit" id="submit" class="btn btn-dark w-100" value="this">Continua</button>
+
                 <div class="text-center">
                     Nu ai cont? Nu-ti face griji
                     <br>
                     Poti crea unul in pasul urmator
-                    <a class="create"routerLink="/create">Creaza Cont!</a>
+                    <a class="create" routerLink="/create">Creaza Cont!</a>
                 </div>
-
                 <div class="d-flex justify-content-center">
-                    <!-- <img src="https://img.icons8.com/fluency/50/000000/facebook-new.png" alt="facebook-logo" />
-                <img src="https://img.icons8.com/external-justicon-flat-justicon/50/000000/external-google-plus-social-media-justicon-flat-justicon.png"
-                    alt="google-logo" />
-                <img src="https://img.icons8.com/ios-filled/50/000000/ios-logo.png" /> -->
                     <a class="btn" style="background-color: #0096ff;">
                         <img class="float-start w-25" src="https://img.icons8.com/fluency/30/000000/facebook-new.png"
                             alt="facebook-logo" />

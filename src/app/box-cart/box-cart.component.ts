@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FileWatcherEventKind } from 'typescript';
+import { CartService } from '../cart.service';
 import { Product } from '../product.model';
+import { ProductComponent } from '../product/product.component';
 import { ProductsComponent } from '../products/products.component';
 
 @Component({
@@ -10,13 +11,12 @@ import { ProductsComponent } from '../products/products.component';
 })
 export class BoxCartComponent implements OnInit {
   CartTotal: ProductsComponent[] = [];
-  total = 0;
-  constructor() {}
-  
+  total: number = 0;
+  constructor(public CartService: CartService) {}
+  items = this.CartService.getItemsCart().map((index) => {
+    this.total += index.price;
+  });
 
-  ngOnInit(): void {
-    // this.CartTotal.forEach((index) => {
-    //   this.total += index;
-    // });
-  }
+
+  ngOnInit(): void {}
 }

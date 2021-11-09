@@ -19,5 +19,6 @@ export class ContComponent implements OnInit {
   }
   constructor() {}
 
+
   ngOnInit(): void {}
 }

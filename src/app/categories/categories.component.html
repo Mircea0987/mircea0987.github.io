@@ -28,9 +28,8 @@
                     <div ngbDropdown class="d-inline-block">
                         <a class="nav-link" id="dropdown" ngbDropdownToggle>Categori</a>
                         <div ngbDropdownMenu aria-labelledby="dropdown">
-                            <a routerLink="categorii" *ngFor="let category of categoryes"
+                            <a routerLink="categorii" *ngFor="let category of categoryes " ([ngModel])='search'
                                 ngbDropdownItem>{{category.category}}</a>
-
                         </div>
                     </div>
                 </div>

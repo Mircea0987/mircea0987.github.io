@@ -26,11 +26,12 @@
         </div>
         <section>
             <div *ngIf="items.length" class="card d-flex justify-content-center text-center w-50"
-                style="margin-left: auto; margin-right: auto; margin-top: 5%;">
+                style="margin-left: auto; margin-right: auto; margin-top: 10%;">
                 <div class="card-body">
-                    <div *ngFor="let item of items">
+                    <div #element *ngFor="let item of items">
                         {{item.title}} {{item.price | currency:"RON"}}
-                        <p class="float-end">Sterge</p>
+                        <p class="float-end" (click)="element.remove()">Sterge</p>
+                        <p class="float-end" (click)="MoveToCart(product)">Muta in cos!</p>
                         <hr>
                     </div>
                 </div>
