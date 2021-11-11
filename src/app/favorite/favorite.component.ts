@@ -10,6 +10,7 @@ import { Product } from '../product.model';
 })
 export class FavoriteComponent implements OnInit {
   constructor(public CartService: CartService) {}
+
   items = this.CartService.getItemsFav();
 
   MoveToCart(product: Product) {

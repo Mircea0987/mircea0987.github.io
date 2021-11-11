@@ -31,7 +31,7 @@
                     <div #element *ngFor="let item of items">
                         {{item.title}} {{item.price | currency:"RON"}}
                         <p class="float-end" (click)="element.remove()">Sterge</p>
-                        <p class="float-end" (click)="MoveToCart(product)">Muta in cos!</p>
+                        <p class="float-end" (click)="MoveToCart(item)">Muta in cos!</p>
                         <hr>
                     </div>
                 </div>

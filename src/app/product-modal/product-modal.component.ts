@@ -1,9 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { productDescription } from 'src/product-description';
-import { productModal } from 'src/product-modal';
 import { CartService } from '../cart.service';
 import { Product } from '../product.model';
-import { Y } from '../y';
 
 @Component({
   selector: 'app-product-modal',
@@ -13,7 +10,6 @@ import { Y } from '../y';
 export class ProductModalComponent implements OnInit {
   constructor(public CartService: CartService) {}
   @Input() product: Product;
-
   ngOnInit(): void {}
 
   Pay(product: Product) {

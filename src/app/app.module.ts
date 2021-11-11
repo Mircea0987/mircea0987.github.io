@@ -20,6 +20,8 @@ import { ProductModalForComponent } from './product-modal-for/product-modal-for.
 import { BoxCartComponent } from './box-cart/box-cart.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryComponent } from './categories/category/category.component';
+import { DataService } from './products/data.service';
+import { CartService } from './cart.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,7 @@ import { CategoryComponent } from './categories/category/category.component';
     CategoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
-  providers: [],
+  providers: [DataService,CartService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

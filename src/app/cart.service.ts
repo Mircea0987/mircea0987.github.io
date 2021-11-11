@@ -7,6 +7,7 @@ import { Product } from './product.model';
 export class CartService {
   items: Product[] = [];
   itemFav: Product[] = [];
+  
   addToCart(product: Product) {
     this.items.push(product);
   }

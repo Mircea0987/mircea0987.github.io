@@ -12,12 +12,8 @@
 
 <body>
 
-    <!-- <div style=" display: flex;" *ngFor='let product of products'>
-        <app-product-descirption></app-product-descirption>
-        <app-product-info-box [product]='product'></app-product-info-box>
-        <app-product-modal [product]='product'></app-product-modal>
-    </div> -->
     <section>
+
         <div class="d-flex justify-content-center">
             <ngb-carousel>
                 <ng-template ngbSlide>
@@ -34,13 +30,13 @@
                     </div>
                 </ng-template>
             </ngb-carousel>
-
         </div>
+        
     </section>
-    <div class="d-flex justify-content-evenly" *ngFor='let product of products'>
 
+    <div *ngFor="let product of products" class="d-inline-block m-4">
         <app-product-descirption [product]="product"></app-product-descirption>
-        <app-product-descirption [product]="product"></app-product-descirption>
+        <!-- <app-product-modal [product]='product'></app-product-modal> -->
     </div>
 </body>
 
