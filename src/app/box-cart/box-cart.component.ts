@@ -11,12 +11,11 @@ import { ProductsComponent } from '../products/products.component';
 })
 export class BoxCartComponent implements OnInit {
   CartTotal: ProductsComponent[] = [];
-  total: number = 0;
+  total = 0;
   constructor(public CartService: CartService) {}
-  items = this.CartService.getItemsCart().map((index) => {
+  items = this.CartService.getItemsCart().forEach((index) => {
     this.total += index.price;
   });
-
 
   ngOnInit(): void {}
 }

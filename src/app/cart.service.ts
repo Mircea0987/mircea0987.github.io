@@ -7,7 +7,8 @@ import { Product } from './product.model';
 export class CartService {
   items: Product[] = [];
   itemFav: Product[] = [];
-  
+  product: Product;
+
   addToCart(product: Product) {
     this.items.push(product);
   }
@@ -21,6 +22,9 @@ export class CartService {
     this.items = [];
     return this.items;
   }
+  // delete(product: Product) {
+  //   this.items.splice(product.price);
+  // }
   addtoFav(product: Product) {
     this.itemFav.push(product);
   }

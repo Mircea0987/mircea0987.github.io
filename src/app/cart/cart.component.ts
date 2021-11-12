@@ -8,13 +8,12 @@ import { ProductComponent } from '../product/product.component';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css'],
 })
-export class CartComponent implements OnInit {
 
+export class CartComponent implements OnInit {
 
   constructor(public CartService: CartService) {}
   items = this.CartService.getItemsCart();
 
-  ngOnInit(): void {
 
-  }
+  ngOnInit(): void {}
 }

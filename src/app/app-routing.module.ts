@@ -15,7 +15,7 @@ const routes: Routes = [
   { component: ProductsComponent, path: '' },
   { component: FavoriteComponent, path: 'favorite' },
   { component: CartComponent, path: 'cart' },
-  { component: ProductModalForComponent, path: 'product' },
+  { path: 'products/:productId', component: ProductModalForComponent },
   { component: ContComponent, path: 'cont' },
   { component: CreateComponent, path: 'create' },
   { component: CategoriesComponent, outlet: 'categories', path: '' },
