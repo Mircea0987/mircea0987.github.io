@@ -7,6 +7,7 @@ import { Product } from '../product.model';
 export class DataService {
   products: Product[] = [
     {
+      id:1,
       title: 'Iphone0',
       category: 'Phone',
       company: 'Apple',
@@ -21,6 +22,7 @@ export class DataService {
       url: 'https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751',
     },
     {
+      id:2,
       title: 'Iphone12Pro',
       category: 'Phone',
       company: '1',
@@ -42,6 +44,7 @@ export class DataService {
       url: 'https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751',
     },
     {
+      id:3,
       title: 'Iphone1',
       category: 'Phone',
       company: '3',
@@ -63,6 +66,7 @@ export class DataService {
       url: 'https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751',
     },
     {
+      id:4,
       title: 'Iphone2',
       category: 'Phone',
       company: '5',
@@ -84,6 +88,7 @@ export class DataService {
       url: 'https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751',
     },
     {
+      id:5,
       title: 'Iphone3',
       category: 'Phone',
       company: '7',
@@ -105,6 +110,7 @@ export class DataService {
       url: 'https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751',
     },
     {
+      id:6,
       title: 'Iphone3',
       category: 'Phone',
       company: '7',

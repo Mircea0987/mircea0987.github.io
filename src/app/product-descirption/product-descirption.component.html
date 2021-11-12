@@ -32,8 +32,13 @@
                             </h4>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a routerLink="/product" class="btn btn-outline-dark">See product!</a>
+                            <h3>
+                                <a [title]="product.title + ' details'" [routerLink]="['/products', product.title]">
+                                    <button class="btn btn-outline-dark">See product!</button>
+                                </a>
+                            </h3>
                         </div>
+
                     </div>
                 </div>
             </div>
