@@ -9,9 +9,10 @@ import { DataService } from './data.service';
 })
 export class ProductsComponent implements OnInit {
   constructor(public DataService: DataService) {}
-  products: Product[];
+  product: Product[];
 
   ngOnInit(): void {
-    this.products = this.DataService.products;
+    this.DataService.getData().subscribe((data) => (this.product = data));
+
   }
 }

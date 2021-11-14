@@ -17,7 +17,7 @@
     <article>
 
         <div>
-            <h4>{{product.category}}</h4>
+            <h4>{{product.category | titlecase}}</h4>
             <div>
                 <div class="card" style="width: 20rem;">
                     <img class="product-img"
@@ -27,13 +27,13 @@
                     <div class="card-body">
                         <div>
                             <h4 class="card-title">{{product.title}}</h4>
-                            <p class="card-text">{{product.descriptionDescription}} </p>
+                            <p class="card-text">{{product.descriptionDescription |titlecase}} </p>
                             <h4 class="card-text"> {{product.price | currency:"RON"}}
                             </h4>
                         </div>
                         <div class="d-flex justify-content-center">
                             <h3>
-                                <a [title]="product.title + ' details'" [routerLink]="['/products', product.title]">
+                                <a  [routerLink]="['/products', product.id]">
                                     <button class="btn btn-outline-dark">See product!</button>
                                 </a>
                             </h3>

@@ -16,10 +16,10 @@
         <h4 class="info-product-title" style="font-weight: 700;">{{product.title}}</h4>
         <h5 class="info-product-selle">Vandut De: {{product.company}}</h5>
         <h5 class="info-product-shipper">Livrat De: {{product.deliveryCompany}}</h5>
-        <h5>{{product.isInStock ? 'In stock' : 'Nu e in stock'}} <img
-                src="https://img.icons8.com/emoji/30/000000/green-circle-emoji.png" alt="in stock?" /></h5>
+        <h5>{{product.isInStock? 'In stock' : 'Nu e in stock'}} </h5>
         <h5>Pretul in RON: {{product.price | currency:"RON"}}</h5>
-        <button (click)="Pay()" class="btn btn-outline-info info-product-price" style="width: 100%;"><img
+        <button [disabled]="!product.isInStock" (click)="Pay()" class="btn btn-outline-info info-product-price"
+            style="width: 100%;"><img
                 src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/35/000000/external-cart-grocery-flatart-icons-flat-flatarticons.png" /></button>
         <br>
         <button (click)="Fav()" class="btn btn-outline-info info-product-cart" style="width: 100%;"><img

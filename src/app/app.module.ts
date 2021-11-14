@@ -22,6 +22,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { CategoryComponent } from './categories/category/category.component';
 import { DataService } from './products/data.service';
 import { CartService } from './cart.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { CartService } from './cart.service';
     CategoriesComponent,
     CategoryComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule,HttpClientModule],
   providers: [DataService,CartService],
   bootstrap: [AppComponent],
 })

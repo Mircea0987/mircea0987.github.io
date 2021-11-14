@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from '../product.model';
+import { DataService } from '../products/data.service';
 @Component({
   selector: 'app-product-descirption',
   templateUrl: './product-descirption.component.html',
@@ -8,7 +9,11 @@ import { Product } from '../product.model';
 export class ProductDescirptionComponent implements OnInit {
   @Input()
   product: Product;
-  constructor() {}
+  constructor(public DataService: DataService) {}
+  products: Product[];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.DataService.getData().subscribe((data) => (this.products = data));
+
+  }
 }

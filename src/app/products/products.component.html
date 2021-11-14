@@ -31,12 +31,11 @@
                 </ng-template>
             </ngb-carousel>
         </div>
-        
+
     </section>
 
-    <div *ngFor="let product of products" class="d-inline-block m-4">
+    <div *ngFor="let product of product" class="d-inline-block m-4">
         <app-product-descirption [product]="product"></app-product-descirption>
-        <!-- <app-product-modal [product]='product'></app-product-modal> -->
     </div>
 </body>
 

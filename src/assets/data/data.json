@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Iphone12",
+    "category": "phone",
+    "company": "company",
+    "deliveryCompany": "Sameday",
+    "price": 7000,
+    "rate": 4.4,
+    "isInStock": true,
+    "descriptionDescription": "Telefon mobil Apple iPhone X, 64GB, Green",
+    "description": "A14 Bionic depaseste cu mult orice alt cip de smartphone. Sistemul de camere Pro duce fotografia in mediile slab luminate la un nivel superior, cu un salt si mai senzational pe iPhone 12 Pro Max. Iar Ceramic Shield este de patru ori mai rezistenta la cadere. Prima impresie este excelenta. Stai sa vezi si restul. A14 Bionic este primul cip de 5 nanometri din industrie, cu componente avansate care se masoara efectiv in atomi. Avand cu 40% mai multi tranzistori, acestia maresc viteza si cresc eficienta pentru o autonomie excelenta a bateriei. Iar noul ISP ofera capacitatea pentru inregistrarea video in Dolby Vision - ceva imposibil pentru o camera de filmare profesionala. Oricare alt telefon nici nu intra in discutie.",
+    "dimensions": "180 X 10 (mm)",
+    "material": "Cel mai bun silicon",
+    "url": "https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751"
+  },
+  {
+    "id": 2,
+    "title": "IphoneX",
+    "category": "phone",
+    "company": "company",
+    "deliveryCompany": "Sameday",
+    "price": 5000,
+    "rate": 4.4,
+    "isInStock": true,
+    "descriptionDescription": "Telefon mobil Apple iPhone X, 64GB, Green",
+    "description": "A14 Bionic depaseste cu mult orice alt cip de smartphone. Sistemul de camere Pro duce fotografia in mediile slab luminate la un nivel superior, cu un salt si mai senzational pe iPhone 12 Pro Max. Iar Ceramic Shield este de patru ori mai rezistenta la cadere. Prima impresie este excelenta. Stai sa vezi si restul. A14 Bionic este primul cip de 5 nanometri din industrie, cu componente avansate care se masoara efectiv in atomi. Avand cu 40% mai multi tranzistori, acestia maresc viteza si cresc eficienta pentru o autonomie excelenta a bateriei. Iar noul ISP ofera capacitatea pentru inregistrarea video in Dolby Vision - ceva imposibil pentru o camera de filmare profesionala. Oricare alt telefon nici nu intra in discutie.",
+    "dimensions": "180 X 10 (m)",
+    "material": "Cel mai bun silicon",
+    "url": "https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751"
+  },
+  {
+    "id": 3,
+    "title": "IphoneXPro",
+    "category": "phone",
+    "company": "company",
+    "deliveryCompany": "Sameday",
+    "price": 5500,
+    "rate": 4.4,
+    "isInStock": false,
+    "descriptionDescription": "Telefon mobil Apple iPhone X, 64GB, Green",
+    "description": "A14 Bionic depaseste cu mult orice alt cip de smartphone. Sistemul de camere Pro duce fotografia in mediile slab luminate la un nivel superior, cu un salt si mai senzational pe iPhone 12 Pro Max. Iar Ceramic Shield este de patru ori mai rezistenta la cadere. Prima impresie este excelenta. Stai sa vezi si restul. A14 Bionic este primul cip de 5 nanometri din industrie, cu componente avansate care se masoara efectiv in atomi. Avand cu 40% mai multi tranzistori, acestia maresc viteza si cresc eficienta pentru o autonomie excelenta a bateriei. Iar noul ISP ofera capacitatea pentru inregistrarea video in Dolby Vision - ceva imposibil pentru o camera de filmare profesionala. Oricare alt telefon nici nu intra in discutie.",
+    "dimensions": "180 X 10 (mm)",
+    "material": "Cel mai bun silicon",
+    "url": "https://s13emagst.akamaized.net/products/33382/33381519/images/res_a40457d533d5f7a229cf370e39a691a2.jpg?width=450&height=450&hash=76A3F3CE2BFB77CAE80826C102A5F751"
+  }
+]
