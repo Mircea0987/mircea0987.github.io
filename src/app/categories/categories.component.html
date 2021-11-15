@@ -26,9 +26,10 @@
                 <a class="nav-link" style="color:black;" routerLink="/cart">Cos</a>
                 <div>
                     <div ngbDropdown class="d-inline-block">
-                        <a class="nav-link" id="dropdown" ngbDropdownToggle>Categori</a>
+                        <a class="nav-link" id="dropdown" ngbDropdownToggle>Categorii</a>
                         <div ngbDropdownMenu aria-labelledby="dropdown">
-                            <a routerLink="categorii" *ngFor="let category of categoryes " ([ngModel])='search'
+                            <a routerLink="categorii" *ngFor="let category of categoryes"
+                                ng-repeat="category in categoryes | orderBy: 'category'"
                                 ngbDropdownItem>{{category.category}}</a>
                         </div>
                     </div>

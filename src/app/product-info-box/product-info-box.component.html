@@ -16,6 +16,8 @@
         <h4 class="info-product-title" style="font-weight: 700;">{{product.title}}</h4>
         <h5 class="info-product-selle">Vandut De: {{product.company}}</h5>
         <h5 class="info-product-shipper">Livrat De: {{product.deliveryCompany}}</h5>
+        <ngb-rating style="color:yellowgreen;font-size: 1.5em;" [(rate)]="product.rate" [max]="5"></ngb-rating>
+        <pre>Current Rate: <b>{{product.rate}}</b></pre>
         <h5>{{product.isInStock? 'In stock' : 'Nu e in stock'}} </h5>
         <h5>Pretul in RON: {{product.price | currency:"RON"}}</h5>
         <button [disabled]="!product.isInStock" (click)="Pay()" class="btn btn-outline-info info-product-price"

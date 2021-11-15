@@ -19,10 +19,8 @@
         <div>
             <h4>{{product.category | titlecase}}</h4>
             <div>
-                <div class="card" style="width: 20rem;">
-                    <img class="product-img"
-                        src="https://i.pinimg.com/736x/4d/1d/71/4d1d7134802fbda569d75c91ec647d4f--home-computer-desks-minimalist-desk.jpg"
-                        alt="product-img">
+                <div class="card" style="width: 18rem;">
+                    <img class="product-img" src={{product.url}} alt="product-img">
 
                     <div class="card-body">
                         <div>
@@ -33,7 +31,7 @@
                         </div>
                         <div class="d-flex justify-content-center">
                             <h3>
-                                <a  [routerLink]="['/products', product.id]">
+                                <a [routerLink]="['/products', product.id]">
                                     <button class="btn btn-outline-dark">See product!</button>
                                 </a>
                             </h3>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../category-inteface';
+import { Product } from '../product.model';
+import { DataService } from '../products/data.service';
 
 @Component({
   selector: 'app-categories',
@@ -7,8 +9,9 @@ import { Category } from '../category-inteface';
   styleUrls: ['./categories.component.css'],
 })
 export class CategoriesComponent implements OnInit {
-  categoryes: Category[] = [
+  categoryes: Product[] = [
     {
+      id: 1,
       title: 'string',
       category: 'Mobila',
       company: 'string',
@@ -23,6 +26,7 @@ export class CategoriesComponent implements OnInit {
       url: 'string',
     },
     {
+      id: 2,
       title: 'string',
       category: 'Carti',
       company: 'string',
@@ -37,6 +41,7 @@ export class CategoriesComponent implements OnInit {
       url: 'string',
     },
     {
+      id: 3,
       title: 'string',
       category: 'Telefoane',
       company: 'string',
@@ -50,9 +55,9 @@ export class CategoriesComponent implements OnInit {
       material: 'string',
       url: 'string',
     },
+    
   ];
-  search:string
-  constructor() {}
+  constructor(public DataService: DataService) {}
 
   ngOnInit(): void {}
 }

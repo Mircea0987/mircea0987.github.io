@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Product } from '../product.model';
 import { DataService } from '../products/data.service';
 
@@ -9,9 +10,14 @@ import { DataService } from '../products/data.service';
 })
 export class ProductModalForComponent implements OnInit {
   @Input() product: Product;
-  constructor(public DataService: DataService) {}
+  constructor(
+    public DataService: DataService,
+    public ActivatedRouter: ActivatedRoute
+  ) {}
   products: Product[];
+  public idList: any;
   ngOnInit(): void {
     this.DataService.getData().subscribe((data) => (this.products = data));
+
   }
 }
