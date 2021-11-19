@@ -9,15 +9,10 @@ import { DataService } from '../products/data.service';
   styleUrls: ['./product-modal-for.component.css'],
 })
 export class ProductModalForComponent implements OnInit {
-  @Input() product: Product;
-  constructor(
-    public DataService: DataService,
-    public ActivatedRouter: ActivatedRoute
-  ) {}
-  products: Product[];
-  public idList: any;
-  ngOnInit(): void {
-    this.DataService.getData().subscribe((data) => (this.products = data));
+  constructor(public DataService: DataService) {}
+  product: Product[];
 
+  ngOnInit(): void {
+    this.DataService.getData().subscribe((data) => (this.product = data));
   }
 }

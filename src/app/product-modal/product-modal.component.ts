@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../cart.service';
 import { Product } from '../product.model';
 
@@ -11,9 +10,7 @@ import { Product } from '../product.model';
 export class ProductModalComponent implements OnInit {
   constructor(public CartService: CartService) {}
   @Input() product: Product;
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   Pay(product: Product) {
     this.CartService.addToCart(product);
