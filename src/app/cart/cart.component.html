@@ -23,7 +23,7 @@
             <div class="card-body">
                 <div *ngFor="let item of items" #element>
                     {{ item.title }} {{ item.price | currency: "RON"}}
-                    <p class="float-end" (click)="element.remove()">Sterge</p>
+                    <p class="float-end" (click)="removeFromCart(item)">Sterge</p>
                     <hr>
                 </div>
             </div>

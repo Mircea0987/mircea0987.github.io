@@ -12,6 +12,12 @@ export class CartService {
   addToCart(product: Product) {
     this.items.push(product);
   }
+  removeFromCart(product: Product) {
+    const index: number = this.items.indexOf(product);
+    if (index !== -1) {
+        this.items.splice(index, 1);
+    }  
+  }
   getItemsCart() {
     return this.items;
   }
