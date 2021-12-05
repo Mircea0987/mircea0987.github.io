@@ -1,6 +1,6 @@
-import { Component,  OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CartService } from '../cart.service';
-
+import { Product } from '../product.model';
 
 @Component({
   selector: 'app-box-cart',
@@ -8,13 +8,9 @@ import { CartService } from '../cart.service';
   styleUrls: ['./box-cart.component.css'],
 })
 export class BoxCartComponent implements OnInit {
-  total = 0;
-  Calcul(){
-  }
+
   constructor(public CartService: CartService) {}
-  items = this.CartService.getItemsCart().forEach((product) => {
-    this.total += product.price;
-  });
+
 
   ngOnInit(): void {}
 }

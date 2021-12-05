@@ -18,6 +18,7 @@ export class ProductModalForComponent implements OnInit {
         (this.product = data.find(
           (p) => p.id == this.route.snapshot.params['Id']
         ) as Product)
+        
     );
   }
 }

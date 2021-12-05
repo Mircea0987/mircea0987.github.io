@@ -9,14 +9,21 @@ export class CartService {
   itemFav: Product[] = [];
   product: Product;
 
+  totalPrice: number = 0;
+
   addToCart(product: Product) {
     this.items.push(product);
+    this.totalPrice = this.totalPrice + product.price;
+  }
+  getCurrentTotalPrice() {
+    return this.totalPrice;
   }
   removeFromCart(product: Product) {
     const index: number = this.items.indexOf(product);
     if (index !== -1) {
-        this.items.splice(index, 1);
-    }  
+      this.items.splice(index, 1);
+      this.totalPrice = this.totalPrice - product.price;
+    }
   }
   getItemsCart() {
     return this.items;
