@@ -23,6 +23,9 @@ import { CategoryComponent } from './categories/category/category.component';
 import { DataService } from './products/data.service';
 import { CartService } from './cart.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CategoriesForComponent } from './categories/categories-for/categories-for.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,8 +46,9 @@ import { HttpClientModule } from '@angular/common/http';
     BoxCartComponent,
     CategoriesComponent,
     CategoryComponent,
+    CategoriesForComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule,HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule,HttpClientModule,Ng2SearchPipeModule,FormsModule],
   providers: [DataService,CartService],
   bootstrap: [AppComponent],
 })

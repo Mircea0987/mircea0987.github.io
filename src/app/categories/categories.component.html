@@ -28,21 +28,21 @@
                     <div ngbDropdown class="d-inline-block">
                         <a class="nav-link" id="dropdown" ngbDropdownToggle>Categorii</a>
                         <div ngbDropdownMenu aria-labelledby="dropdown">
-                            <a routerLink="categorii" *ngFor="let category of categoryes"
-                                ng-repeat="category in categoryes | orderBy: 'category'"
-                                ngbDropdownItem>{{category.category}}</a>
+                            <a routerLink="categorii"
+                                ngbDropdownItem></a>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <form class="form-inline bg-light  mx-lg-auto">
-                <input style="border-radius: 20px;" class="form-control mr-sm-2" name="search" type="search"
-                    placeholder="Search">
-            </form>
+
+            <input type="text" [(ngModel)]="search">
+    
+
         </div>
 
     </nav>
+ 
     <!-- <div *ngFor="let category of categoryes">
         <app-category [category]="category"></app-category>
     </div> -->

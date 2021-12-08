@@ -11,9 +11,9 @@ export class ProductDescirptionComponent implements OnInit {
   product: Product;
   constructor(public DataService: DataService) {}
   products: Product[];
+  search: any;
 
   ngOnInit(): void {
     this.DataService.getData().subscribe((data) => (this.products = data));
   }
-  
 }

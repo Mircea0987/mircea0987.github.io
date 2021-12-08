@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
 import { Category } from '../category-inteface';
 import { Product } from '../product.model';
 import { DataService } from '../products/data.service';
@@ -9,55 +10,35 @@ import { DataService } from '../products/data.service';
   styleUrls: ['./categories.component.css'],
 })
 export class CategoriesComponent implements OnInit {
-  categoryes: Product[] = [
+  search:any;
+  categoryes: Category[] = [
     {
-      id: 1,
-      title: 'string',
       category: 'Mobila',
-      company: 'string',
-      deliveryCompany: 'string',
-      price: 1,
-      rate: 2,
-      isInStock: true,
-      description: 'string',
-      descriptionDescription: 'string',
-      dimensions: 'string',
-      material: 'string',
-      url: 'string',
     },
     {
-      id: 2,
-      title: 'string',
       category: 'Carti',
-      company: 'string',
-      deliveryCompany: 'string',
-      price: 1,
-      rate: 2,
-      isInStock: true,
-      description: 'string',
-      descriptionDescription: 'string',
-      dimensions: 'string',
-      material: 'string',
-      url: 'string',
     },
     {
-      id: 3,
-      title: 'string',
       category: 'Telefoane',
-      company: 'string',
-      deliveryCompany: 'string',
-      price: 1,
-      rate: 2,
-      isInStock: true,
-      description: 'string',
-      descriptionDescription: 'string',
-      dimensions: 'string',
-      material: 'string',
-      url: 'string',
     },
-    
+    {
+      category: 'Masini',
+    },
+    {
+      category: 'PC',
+    },
+    {
+      category: 'Aer Conditionat',
+    },
   ];
-  constructor(public DataService: DataService) {}
+  constructor(
+    public DataService: DataService,
+    public cartService: CartService
+  ) {}
+  // Sorting(){
+  //   this.cartService.Sort()
+
+  // }
 
   ngOnInit(): void {}
 }

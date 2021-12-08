@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Category } from './category-inteface';
 import { Product } from './product.model';
 
 @Injectable({
@@ -8,6 +9,7 @@ export class CartService {
   items: Product[] = [];
   itemFav: Product[] = [];
   product: Product;
+  category: Category[] = [];
 
   totalPrice: number = 0;
 
@@ -31,6 +33,12 @@ export class CartService {
   getItemsFav() {
     return this.itemFav;
   }
+  // Sort(category: Category) {
+  //   let Sorted = this.category.indexOf(category);
+  //   if(Sorted >= 0){
+  //     this.category = this.category.filter()
+  //   }
+  // }
   clearCart() {
     this.items = [];
     return this.items;
