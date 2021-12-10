@@ -44,21 +44,20 @@
                 <a class="nav-link" style="color:black;" routerLink="/cont">Cont</a>
                 <a class="nav-link" style="color:black;" routerLink="/favorite">Favorite</a>
                 <a class="nav-link" style="color:black;" routerLink="/cart">Cos</a>
-                <!-- <div>
-                    <div ngbDropdown class="d-inline-block">
-                        <a class="nav-link" id="dropdown" ngbDropdownToggle>Categorii</a>
-                        <div ngbDropdownMenu aria-labelledby="dropdown">
-                            <a routerLink="categorii" ngbDropdownItem></a>
-                        </div>
-                    </div>
-                </div> -->
+                <div>
+
+                </div>
+
 
             </div>
 
-            <input class="form-select" [(ngModel)]='search'>
 
 
         </div>
+
+        <input class="search" [(ngModel)]='search' placeholder="Search product">
+
+
 
     </nav>
     <div *ngFor="let product of product |filter:search" class="d-inline-block ml-5 p-5">
